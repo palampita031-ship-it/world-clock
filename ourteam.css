@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rancho&family=Water+Brush&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+.team_section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(b9162b95-5bb0-4a40-bd19-614329980f88.jpg);
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.container h1{
+    font-size: 20px;
+    position: absolute;
+    top: -70px;
+    left: 360px;
+    color: rgb(249, 35, 124);
+    background: rgb(168, 169, 165);
+}
+.container h1::after,
+.container h1::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    left: 0;
+
+}
+.container h1::after{
+    top: -2px;
+}
+.container h1::before{
+    bottom: -2px;
+}
+.img_wraper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img_wraper .img_card{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 7px;
+    margin: 0 20px;
+    box-shadow: 7px 7px 42px rgba(51, 51, 51, 0.422);
+}
+.img_wraper .img_card:nth-child(odd){
+    transform: translateY(-40px);
+}
+.img_wraper .img_card:nth-child(even){
+    transform: translateY(40px);
+}
+.img_card .img{
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+}
+.img_card .img img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    transition: all .8s ease;
+}
+.img_card:hover .img img{
+    filter: grayscale(0);
+    transform: scale(1.08);
+}
+.img_card .text{
+    line-height: 23px;
+    padding: 5px 0 10px 10px;
+}
+.img_card .text h2{
+    font-size: 19px;
+}
+.img_card .text p{
+    font-size: 15px;
+    font-weight: 500;
+    opacity: .8;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+p{
+    color: rgb(228, 3, 228);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
